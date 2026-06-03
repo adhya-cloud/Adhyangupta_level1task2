@@ -1,5 +1,9 @@
 # Portfolio Steps
 
+## Live Demo Preview
+
+![Live Demo Preview](images/live-demo-1.png)
+
 Open `index.html` to view the portfolio.
 
 Open `admin.html` to edit content.
