@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Adhyan Gupta portfolio - B.Tech CSE Artificial Intelligence student, Software Developer and AI Engineer." />
+    <title>Adhyan Gupta | AI Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <nav class="navbar">
+        <a class="brand" href="#home"><span>AG</span> Adhyan Gupta</a>
+        <button class="menu-toggle" type="button" aria-label="Open menu"><i></i><i></i><i></i></button>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#certificates">Certificates</a>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
+          <a href="admin.html">Edit</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow" id="heroStatus">B.Tech CSE (Artificial Intelligence) | 2nd Year Student</p>
+            <h1 id="heroHeadline">AI-focused developer portfolio built with code, clarity, and impact.</h1>
+            <p class="hero-text" id="heroIntro"></p>
+            <div class="hero-actions">
+              <a class="btn primary" id="resumeDownloadTop" href="Adhyan_Gupta_Resume.pdf" download>Download Resume</a>
+              <a class="btn secondary" href="#contact">Contact Me</a>
+              <button class="btn ghost" type="button" id="speakCvBtn">Play CV Intro</button>
+            </div>
+            <div class="quick-stats">
+              <div><strong>AI</strong><span>Learning Focus</span></div>
+              <div><strong id="projectCount">2+</strong><span>Projects</span></div>
+              <div><strong id="locationText">India</strong><span>Location</span></div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <article class="profile-card glass-card">
+              <div class="tech-terminal"><span></span><span></span><span></span><code>portfolio.init()</code></div>
+              <div class="profile-image talking-avatar">
+                <img src="profile.jpg" alt="Adhyan Gupta profile" id="profilePhoto" />
+                <span class="avatar-fallback">AG</span>
+                <span class="voice-ring"></span>
+                <span class="mouth"></span>
+              </div>
+              <div class="profile-content">
+                <p class="status-pill">Open to internships, projects, and collaborations</p>
+                <h2 id="profileName">Adhyan Gupta</h2>
+                <p id="profileRole">Software Developer & AI Engineer in progress</p>
+                <div class="speech-bubble" id="speechBubble">Click Play CV Intro and I will explain my portfolio.</div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="section-heading reveal"><p class="eyebrow">About Me</p><h2>Curious about AI, disciplined about engineering.</h2></div>
+        <div class="about-grid">
+          <article class="glass-card info-card reveal"><h3>Introduction</h3><p id="aboutIntro"></p></article>
+          <article class="glass-card info-card reveal"><h3>Education</h3><p id="educationText"></p></article>
+          <article class="glass-card info-card reveal"><h3>Career Objective</h3><p id="objectiveText"></p></article>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="section-heading reveal"><p class="eyebrow">Skills</p><h2>Tools and technologies I am building with.</h2></div>
+        <div class="skills-grid reveal" id="skillsGrid"></div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading reveal"><p class="eyebrow">Projects</p><h2>Practical ideas shaped into working products.</h2></div>
+        <div class="projects-grid" id="projectsGrid"></div>
+      </section>
+
+      <section class="section" id="certificates">
+        <div class="section-heading reveal"><p class="eyebrow">Certificates</p><h2>My certificates and credentials.</h2></div>
+        <div class="cert-grid" id="certificatesGrid"></div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="section-heading reveal"><p class="eyebrow">Experience & Achievements</p><h2>Learning through events, credentials, and real practice.</h2></div>
+        <div class="timeline" id="experienceList"></div>
+      </section>
+
+      <section class="section" id="resume">
+        <div class="resume-card glass-card reveal">
+          <div><p class="eyebrow">Resume</p><h2>Download my latest CV</h2><p>A concise overview of my education, skills, projects, achievements, and career direction.</p></div>
+          <div class="resume-preview"><span>CV</span><h3>Adhyan Gupta</h3><p>B.Tech CSE (AI) Student</p><a class="btn primary" id="resumeDownloadBottom" href="Adhyan_Gupta_Resume.pdf" download>Download CV</a></div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="section-heading reveal"><p class="eyebrow">Contact</p><h2>Let us connect and build something useful.</h2></div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <a class="contact-item glass-card" id="emailLink"><span>Email</span><strong id="emailText"></strong></a>
+            <a class="contact-item glass-card" id="linkedinLink" target="_blank" rel="noreferrer"><span>LinkedIn</span><strong id="linkedinText"></strong></a>
+            <a class="contact-item glass-card" id="githubLink" target="_blank" rel="noreferrer"><span>GitHub</span><strong id="githubText"></strong></a>
+          </div>
+          <form class="contact-form glass-card reveal" id="contactForm">
+            <label>Name<input type="text" name="name" placeholder="Your name" required /></label>
+            <label>Email<input type="email" name="email" placeholder="your.email@example.com" required /></label>
+            <label>Message<textarea name="message" rows="5" placeholder="Tell me about your idea" required></textarea></label>
+            <button class="btn primary" type="submit">Send Message</button>
+            <p class="form-status" id="formStatus"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Adhyan Gupta. Built for AI, software development, and innovation.</p>
+      <a href="admin.html">Edit Content</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

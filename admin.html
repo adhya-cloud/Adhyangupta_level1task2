@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Portfolio | Adhyan Gupta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="admin-page">
+    <header class="site-header scrolled">
+      <nav class="navbar">
+        <a class="brand" href="index.html"><span>AG</span> Portfolio Editor</a>
+        <div class="nav-links always-open"><a href="index.html">View Site</a></div>
+      </nav>
+    </header>
+
+    <main class="admin-shell">
+      <div class="admin-header">
+        <div>
+          <p class="eyebrow">Admin Editor</p>
+          <h1>Edit your portfolio</h1>
+          <p class="hint">Upload image, CV, certificates, and update content. Saved in this browser.</p>
+        </div>
+        <a class="btn secondary" href="index.html">View Website</a>
+      </div>
+
+      <form id="adminForm" class="admin-grid">
+        <section class="admin-card glass-card">
+          <h3>Profile Content</h3>
+          <label>Name<input name="name" /></label>
+          <label>Status<input name="status" /></label>
+          <label>Role<input name="role" /></label>
+          <label>Location<input name="location" /></label>
+          <label>Headline<textarea name="headline" rows="3"></textarea></label>
+          <label>Hero Intro<textarea name="intro" rows="4"></textarea></label>
+        </section>
+
+        <section class="admin-card glass-card">
+          <h3>Upload Files</h3>
+          <label>Profile Image for Animated Avatar<input type="file" id="profileUpload" accept="image/*" /></label>
+          <div class="admin-preview" id="profilePreview"></div>
+          <label>Upload CV / Resume PDF<input type="file" id="resumeUpload" accept="application/pdf" /></label>
+          <p class="hint" id="resumeFileName">No resume uploaded yet.</p>
+          <label>Add Certificates<input type="file" id="certificateUpload" accept="image/*,application/pdf" multiple /></label>
+          <p class="hint">After saving, certificates will appear in the Certificates section.</p>
+        </section>
+
+        <section class="admin-card glass-card">
+          <h3>Contact Links</h3>
+          <label>Email<input name="email" /></label>
+          <label>LinkedIn<input name="linkedin" /></label>
+          <label>GitHub<input name="github" /></label>
+        </section>
+
+        <section class="admin-card glass-card">
+          <h3>About</h3>
+          <label>About Me<textarea name="about" rows="3"></textarea></label>
+          <label>Education<textarea name="education" rows="3"></textarea></label>
+          <label>Career Objective<textarea name="objective" rows="3"></textarea></label>
+        </section>
+
+        <section class="admin-card glass-card">
+          <h3>Skills</h3>
+          <label>One skill per line<textarea name="skills" rows="10"></textarea></label>
+        </section>
+
+        <section class="admin-card glass-card">
+          <h3>Projects</h3>
+          <label>JSON format<textarea name="projects" rows="10"></textarea></label>
+        </section>
+
+        <section class="admin-card glass-card full">
+          <h3>Certificates Added</h3>
+          <div class="cert-admin-list" id="certAdminList"></div>
+        </section>
+
+        <section class="admin-card glass-card full">
+          <h3>Experience & Achievements</h3>
+          <label>JSON format<textarea name="experience" rows="8"></textarea></label>
+          <div class="admin-actions">
+            <button class="btn primary" type="submit">Save Changes</button>
+            <button class="btn secondary" type="button" id="resetBtn">Reset Default</button>
+            <button class="btn ghost" type="button" id="clearCertsBtn">Clear Certificates</button>
+          </div>
+          <p class="status-ok" id="adminStatus"></p>
+        </section>
+      </form>
+    </main>
+
+    <script src="admin.js"></script>
+  </body>
+</html>
